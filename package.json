@@ -19,6 +19,7 @@
     "concurrent": true
   },
   "dependencies": {
+    "@onflow/fcl": "^0.0.78",
     "final-form": "^4.20.6",
     "lodash": "^4.17.21",
     "next": "12.1.0",

@@ -5,10 +5,10 @@ const propTypes = {
     registerState: PropTypes.object.isRequired,
 }
 
-export default function RegisterComponent({ submit, registerState }) {
+export default function RegisterComponent({ submit, ...rest }) {
     return (
         <span>
-            <pre>{JSON.stringify(registerState)}</pre>
+            <pre>{JSON.stringify(rest)}</pre>
             <button onClick={submit}>Register</button>
         </span>
     )
