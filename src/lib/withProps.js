@@ -1,6 +1,6 @@
-import wrapDisplayName from "./wrapDisplayName";
-import setDisplayName from "./setDisplayName";
 import mapProps from "./mapProps";
+import setDisplayName from "./setDisplayName";
+import wrapDisplayName from "./wrapDisplayName";
 
 const withProps = (input) => {
     const hoc = mapProps((props) => ({

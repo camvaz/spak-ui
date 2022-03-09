@@ -1,21 +1,19 @@
-import PropTypes from 'prop-types'
-import { useRegisterState } from './hooks';
+import { useRegisterState } from "./hooks";
+import PropTypes from "prop-types";
 
 const propTypes = {
     submit: PropTypes.func.isRequired,
-    actions: PropTypes.object.isRequired,
-}
+};
 
-export default function RegisterComponent({ submit, actions }) {
+export default function RegisterComponent({ submit }) {
     const registerState = useRegisterState();
-    const onSubmit = () => submit(registerState);
 
     return (
         <span>
             <pre>{JSON.stringify(registerState)}</pre>
-            <button onClick={actions.dumbChange}>Register</button>
+            <button onClick={submit}>Register</button>
         </span>
-    )
+    );
 }
 
 RegisterComponent.propTypes = propTypes;

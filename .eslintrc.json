@@ -1,13 +1,22 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": ["plugin:jsx-a11y/recommended","next/core-web-vitals"],
   "plugins": [
     "react",
     "import",
+    "sort-imports-es6-autofix",
+    "jsx-a11y",
+    "prettier",
     "react-hooks"
   ],
   "rules": {
+    "no-unused-vars": 2,
     "no-console": ["error", { "allow": ["warn", "error", "debug"] }],
-    "no-unused-vars": "off",
+    "prettier/prettier": "error",
+    "sort-imports-es6-autofix/sort-imports-es6": [2, {
+      "ignoreCase": false,
+      "ignoreMemberSort": false,
+      "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+    }],
     "react/display-name": "off",
     "import/no-anonymous-default-export": "off",
     "react-hooks/rules-of-hooks": "error",

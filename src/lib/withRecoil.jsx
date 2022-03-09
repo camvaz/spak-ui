@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { RecoilRoot, useRecoilSnapshot } from "recoil";
+import { useEffect } from "react";
 
 function WithDebugObserverWrapper() {
     const snapshot = useRecoilSnapshot();
@@ -23,4 +23,4 @@ export default function withRecoil(Component) {
             </RecoilRoot>
         );
     };
-};
+}

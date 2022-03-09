@@ -1,8 +1,8 @@
 module.exports = {
-  reactStrictMode: true,
-  webpack(config) {
-    return {
-      ...config
-  } 
-}
-}
+    reactStrictMode: true,
+    webpack(config) {
+        return {
+            ...config,
+        };
+    },
+};

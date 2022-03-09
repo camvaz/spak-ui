@@ -1,4 +1,3 @@
-import { isFunction } from "lodash";
 import { useRecoilValue } from "recoil";
 
 export default function connectSlice({ slice }) {

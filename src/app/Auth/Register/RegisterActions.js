@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { useSetRecoilState, useResetRecoilState } from "recoil";
+import { useResetRecoilState, useSetRecoilState } from "recoil";
 import RegisterSlice from "./RegisterSlice";
 export var useRegisterActions;
 
