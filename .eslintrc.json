@@ -11,9 +11,18 @@
   "rules": {
     "no-unused-vars": 2,
     "no-console": ["error", { "allow": ["warn", "error", "debug"] }],
-    "prettier/prettier": "error",
+    "prettier/prettier": ["error", {
+      "tabWidth": 4,
+      "useTabs": false,
+      "trailingComma": "all",
+      "bracketSameLine": false,
+      "arrowParens": "avoid",
+      "endOfLine": "lf",
+      "semi": false,
+      "singleQuote": true
+    }],
     "sort-imports-es6-autofix/sort-imports-es6": [2, {
-      "ignoreCase": false,
+      "ignoreCase": true,
       "ignoreMemberSort": false,
       "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
     }],

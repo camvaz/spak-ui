@@ -1,1 +1,1 @@
-export { default as useRegisterState } from "./useRegisterState";
+export { default as useRegisterState } from './useRegisterState'

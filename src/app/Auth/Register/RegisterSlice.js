@@ -1,20 +1,20 @@
-import { atom } from "recoil";
+import { atom } from 'recoil'
 
 const registerSliceConfig = {
-    key: "registerState",
+    key: 'registerState',
     default: {
-        email: "",
-        password: "",
-        confirmPassword: "",
-        firstName: "",
-        lastName: "",
-        phone: "",
-        address: "",
-        city: "",
-        state: "",
+        email: '',
+        password: '',
+        confirmPassword: '',
+        firstName: '',
+        lastName: '',
+        phone: '',
+        address: '',
+        city: '',
+        state: '',
     },
-};
-const RegisterSlice = atom(registerSliceConfig);
+}
+const RegisterSlice = atom(registerSliceConfig)
 
-export const useRegisterState = () => useRecoilValue(RegisterSlice);
-export default RegisterSlice;
+export const useRegisterState = () => useRecoilValue(RegisterSlice)
+export default RegisterSlice

@@ -1,1 +1,1 @@
-export { default as withRegisterEffect } from "./withRegisterEffect";
+export { default as withRegisterEffect } from './withRegisterEffect'
