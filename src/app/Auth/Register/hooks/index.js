@@ -1,1 +1,1 @@
-export { default as useResetOnUnmount } from './useResetOnUnmount'
+export { default as useRegisterState } from "./useRegisterState";

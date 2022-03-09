@@ -1,6 +1,10 @@
 class RegisterController {
-    register(){
-
+    register() {
+        try {
+            console.log("register");
+        } catch (e) {
+            console.error("RegisterController::register", e);
+        }
     }
 }
 
