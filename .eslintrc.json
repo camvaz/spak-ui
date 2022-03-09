@@ -6,7 +6,7 @@
     "react-hooks"
   ],
   "rules": {
-    "no-console": "off",
+    "no-console": ["error", { "allow": ["warn", "error", "debug"] }],
     "no-unused-vars": "off",
     "react/display-name": "off",
     "import/no-anonymous-default-export": "off",

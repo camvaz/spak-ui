@@ -14,7 +14,7 @@ useRegisterActions = () => {
     const setRegister = useSetRecoilState(RegisterSlice);
     const resetSlice = useResetRecoilState(RegisterSlice);
 
-    const handlers = useMemo(
+    return useMemo(
         () => ({
             resetSlice,
             handleChange: (e) => {
@@ -27,6 +27,4 @@ useRegisterActions = () => {
         }),
         [resetSlice, setRegister]
     );
-
-    return handlers;
 };
