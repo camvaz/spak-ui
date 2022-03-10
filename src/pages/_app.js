@@ -1,7 +1,6 @@
 import 'styles/globals.css'
+import { withRecoil, withTheme } from 'lib'
 import compose from 'ramda.compose'
-import withRecoil from 'lib/withRecoil'
-import withTheme from 'lib/withTheme'
 
 function withAppContainer(Component) {
     return function withAppContainerWrapper(props) {

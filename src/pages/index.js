@@ -1,4 +1,4 @@
-import '../flow/config'
+import 'flow/config'
 import * as fcl from '@onflow/fcl'
 import { useEffect, useState } from 'react'
 import Head from 'next/head'
